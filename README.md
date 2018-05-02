@@ -15,7 +15,7 @@ Classification by a CNN using Tensorflow.
 - [ ] 卷积操作目前只支持strides=1
 
 ## CNN结构图
-参考 ==readme.pdf==
+参考 **readme.pdf**
 
 ## 运行
 
