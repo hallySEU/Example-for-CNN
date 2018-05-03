@@ -70,7 +70,7 @@ input_size=28，有：
 ```
 
 
-### 2. training data and test data
+### 2. predict data
 
 ```
 预测数据输入格式只由一部分组成，Features_line （也可以和训练数据一样）
