@@ -141,8 +141,9 @@ class DataGenerator(object):
             s = []
             for item in feature_data_list:
                 s.extend([float(i) for i in item.split('#')])
-            # s = [float(i) for i in item.split('#') for item in feature_data_list]
-            s += [0. * input_size for i in range(max_feat_len - cur_feat_len)]
+            # 补0
+            for i in range(max_feat_len - cur_feat_len):
+                s.extend([0.] * input_size)
             datas.append(s)
 
             if len(data_split) > 1:  # 区分训练与预测
