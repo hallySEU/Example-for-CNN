@@ -35,7 +35,7 @@ def cal_model_para(filename):
             max_feat_len = cur_seq_len
 
     if max_feat_len % 10 != 0:
-        max_seq_len = ((max_feat_len / 10) + 1) * 10
+        max_feat_len = (int(max_feat_len / 10) + 1) * 10
 
     print('According to "%s", seq_feature_len is set to %d, ' \
           'input_size is set to %d, num_class is set to %d.' \
