@@ -39,7 +39,7 @@ class CNNModel():
         # Store layers weight & bias
         # 计算池化层后，feature map的height和width, 其中池化操作的padding='SAME'
         cl1_out_height = int(math.ceil(float(self.max_feat_len) / float(self.conf.pooling_k_size)))
-        cl1_out_width = int(math.ceil(float(self.max_feat_len) / float(self.conf.pooling_k_size)))
+        cl1_out_width = int(math.ceil(float(self.input_size) / float(self.conf.pooling_k_size)))
 
         cl2_out_height = int(math.ceil(float(cl1_out_height) / float(self.conf.pooling_k_size)))
         cl2_out_width = int(math.ceil(float(cl1_out_width) / float(self.conf.pooling_k_size)))
